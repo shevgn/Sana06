@@ -9,3 +9,9 @@ array[1] = new Entrant(array[0], 176f, 9.5f, "ZEL");
 array[2] = new Student("Andrii", "Kravchenko", new DateTime(2005, 06, 28), 1, "IPZ", "FICT", "ZTU");
 array[3] = new Teacher("Volodymyr", "Bondar", new DateTime(1994, 03, 9), "Math teacher", "FICT", "ZTU");
 array[4] = new LibraryUser(array[0], 1077, new DateTime(2023, 12, 21), 4m);
+
+foreach (var human in array)
+{
+    Console.WriteLine();
+    human.ShowInfo();
+}
