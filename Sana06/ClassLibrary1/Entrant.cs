@@ -27,9 +27,8 @@ public class Entrant : Human
         _generalEducationInstitutionName = generalEducationInstitutionName;
     }
 
-    public override void ShowInfo()
+    public override string ShowInfo()
     {
-        base.ShowInfo();
-        Console.Write($"{_znoCertificatePoints} {_educationDocumentPoints} {_generalEducationInstitutionName} ");
+        return base.ShowInfo() + $"{_znoCertificatePoints} {_educationDocumentPoints} {_generalEducationInstitutionName} ";
     }
 }

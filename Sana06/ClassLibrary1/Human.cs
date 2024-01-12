@@ -18,9 +18,9 @@ public class Human
         _birthDate = birthDate;
     }
     
-    public virtual void ShowInfo()
+    public virtual string ShowInfo()
     {
-        Console.Write($"{_firstName} {_lastName} {_birthDate.ToShortDateString()} ");
+        return $"{_firstName} {_lastName} {_birthDate.ToShortDateString()} ";
     }
     
     public string FirstName => _firstName;

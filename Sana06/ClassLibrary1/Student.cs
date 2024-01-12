@@ -31,9 +31,8 @@ public class Student : Human
         _institution = institution;
     }
 
-    public override void ShowInfo()
+    public override string ShowInfo()
     {
-        base.ShowInfo();
-        Console.Write($"{_course} {_group} {_faculty} {_institution} ");
+        return base.ShowInfo() + $"{_course} {_group} {_faculty} {_institution} ";
     }
 }

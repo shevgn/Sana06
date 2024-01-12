@@ -28,9 +28,8 @@ public class LibraryUser : Human
         _monthlyReaderFee = monthlyReaderFee;
     }
 
-    public override void ShowInfo()
+    public override string ShowInfo()
     {
-        base.ShowInfo();
-        Console.Write($"{_readerTicketNumber} {_dateOfIssue.ToShortDateString()} {_monthlyReaderFee}");
+        return base.ShowInfo() + $"{_readerTicketNumber} {_dateOfIssue.ToShortDateString()} {_monthlyReaderFee} ";
     }
 }

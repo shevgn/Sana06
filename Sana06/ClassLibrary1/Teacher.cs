@@ -28,9 +28,8 @@ public class Teacher : Human
         _institution = institution;
     }
 
-    public override void ShowInfo()
+    public override string ShowInfo()
     {
-        base.ShowInfo();
-        Console.Write($"{_position} {_department} {_institution} ");
+        return base.ShowInfo() + $"{_position} {_department} {_institution} ";
     }
 }

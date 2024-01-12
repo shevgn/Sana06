@@ -1,7 +1,5 @@
 ﻿using ClassLibrary1;
 
-Console.WriteLine("Hello");
-
 var array = new Human[5];
 
 array[0] = new Human("Artem", "Levchenko", new DateTime(2006, 01, 08));
@@ -12,6 +10,5 @@ array[4] = new LibraryUser(array[0], 1077, new DateTime(2023, 12, 21), 4m);
 
 foreach (var human in array)
 {
-    Console.WriteLine();
-    human.ShowInfo();
+    Console.WriteLine(human.ShowInfo());
 }
